@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To-do list web application</title>
+
+  <!-- Menghubungkan file CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Deskripsi singkat untuk SEO / portofolio -->
+  <meta name="description" content="Aplikasi To-Do List modern dengan fitur tambah, filter, hapus, dan simpan otomatis di browser. Dibuat untuk portofolio.">
+</head>
+<body>
+  <!-- Kontainer utama seluruh isi halaman -->
+  <main class="container">
+
+    <!-- Bagian judul atas (hero section) -->
+    <header class="hero">
+      <div class="hero-inner">
+        <h1>Task Project</h1>
+        <p class="subtitle">Aplikasi To-Do List Project Revou</p>
+      </div>
+      <!-- Dekorasi lingkaran gradasi -->
+      <div class="hero-deco" aria-hidden="true"></div>
+    </header>
+
+    <!-- Bagian panel utama -->
+    <section class="panel">
+      
+      
+      <form id="todo-form" class="todo-form" novalidate>
+        <div class="form-row">
+
+          <div class="field">
+            <label for="title">Tugas Baru</label>
+            <input id="title" name="title" type="text" placeholder="Contoh: Selesaikan laporan proyek" required />
+            <small class="error" id="title-error" aria-live="polite"></small>
+          </div>
+
+          <div class="field">
+            <label for="dueDate">Tanggal</label>
+            <input id="dueDate" name="dueDate" type="date" required />
+            <small class="error" id="date-error" aria-live="polite"></small>
+          </div>
+
+          <button type="submit" class="btn primary">Tambah</button>
+        </div>
+      </form>
+
+      <!-- Bagian kontrol untuk filter & pencarian -->
+      <div class="controls">
+        <div class="search-wrap">
+          <input id="search" type="search" placeholder="Cari tugas..." />
+        </div>
+        <div class="filter-wrap">
+          <label for="filter-date">Filter berdasarkan tanggal</label>
+          <input id="filter-date" type="date" />
+        </div>
+        <div class="actions">
+          <button id="clear-filter" class="btn ghost">Hapus Filter</button>
+          <button id="clear-all" class="btn danger">Hapus Semua</button>
+        </div>
+      </div>
+
+
+      <ul id="todo-list" class="todo-list" aria-live="polite" aria-label="Daftar tugas">
+        <!-- Elemen daftar tugas ditambahkan lewat JavaScript -->
+      </ul>
+
+      <p class="note">Tip: Klik ikon sampah untuk menghapus tugas. Data disimpan otomatis di browser.</p>
+    </section>
+
+    <!-- Bagian bawah halaman -->
+    <footer class="footer">
+      <span>Build with Riza Ahmad Haidar</span>
+      <small>Struktur: index.html • css/style.css • js/script.js</small>
+    </footer>
+
+  </main>
+
+  <!-- Menghubungkan file JavaScript -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
