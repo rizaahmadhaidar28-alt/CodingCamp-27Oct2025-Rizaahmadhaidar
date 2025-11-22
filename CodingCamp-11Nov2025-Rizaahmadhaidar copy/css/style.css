@@ -1,0 +1,109 @@
+/* ==========================
+   Modern Portfolio Website CSS
+   Clean, Professional & Responsive
+   ========================== */
+
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f2f5f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Header --- */
+header {
+    background: linear-gradient(135deg, #4f46e5, #6d28d9);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* --- Layout Wrapper --- */
+.container {
+    width: min(1000px, 90%);
+    margin: 40px auto;
+}
+
+/* --- Card Section --- */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 28px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+    margin-bottom: 14px;
+    color: #4f46e5;
+}
+
+/* --- Project List --- */
+ul.project-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+ul.project-list li:last-child {
+    border-bottom: none;
+}
+
+/* --- Buttons --- */
+button {
+    background: #4f46e5;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #3b36c5;
+    transform: translateY(-2px);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+    header h1 { font-size: 28px; }
+    header p { font-size: 14px; }
+    .card { padding: 18px; border-radius: 10px; }
+}
